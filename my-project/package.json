@@ -1,0 +1,18 @@
+{
+  "name": "main",
+  "version": "1.0.0",
+  "private":true,
+  "main": "dist/index.js",
+  "scripts": {
+    "build:everything:inside": "tsc --build && ts-project-bundle --out=build",
+    "build": "tsc --build .",
+    "start": "node dist/index.js",
+    "start-ts": "ts-node ./src/index.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^16.3.3",
+    "ts-node": "^10.9.1",
+    "ts-project-bundle": "0.0.8",
+    "typescript": "^4.3.5"
+  }
+}
